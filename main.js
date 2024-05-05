@@ -1,7 +1,7 @@
 // https://dev.to/leonardoschmittk/how-to-make-a-star-rating-with-js-36d3
 const form = document.getElementById('grid_container_content')
 const ratingStars = [...document.getElementsByClassName('rating_stars')]
-
+const ratingMessage = document.getElementById('rating_message')
 
 const filtered = ratingStars.filter((e) => {
   return (
@@ -14,6 +14,6 @@ const filtered = ratingStars.filter((e) => {
 console.log(filtered);
 
 const handleSubmit = (number) => {
-  return `You've selected ${number} of 5`
+  console.log(`You've selected ${number} of 5`)
 }
 

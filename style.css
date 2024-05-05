@@ -131,3 +131,36 @@ body {
   background-color: var(--white);
   cursor: pointer;
 }
+
+
+.thankyou_img {
+  text-align: center;
+  grid-area: 1;
+}
+
+.text_container_thankyou h1 {
+  color: white;
+  text-align: center;
+}
+
+.text_container_thankyou p {
+  text-align: center;
+  color: var(--medium-gray);
+}
+
+#rating_message {
+  background-color: var(--dark-blue);
+  text-align: center;
+  align-self: center;
+  color: var(--orange);
+  border: 1px solid var(--dark-blue);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 10vw;
+}
+
+.grid_container_content_thankyou {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 13%;
+}
