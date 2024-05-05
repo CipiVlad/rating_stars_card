@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --light-gray: hsl(217, 12%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(25, 97%, 53%);
+
+  --font-size: 15px;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+
+  --font-family: "Overpass", sans-serif;
+
+}
+
+
+
+body {
+  background-color: var(--very-dark-blue);
+  font-family: var(--font-family);
+}
+
+.grid_wrapper_center {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.grid_container_content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.card {
+  width: 400px;
+  height: 450px;
+  background-color: var(--dark-blue);
+  border-radius: 40px;
+  background: var(--dark-blue);
+  background: radial-gradient(circle, var(--very-dark-blue)0%, var(--dark-blue) 86%);
+
+}
+
+.star_container {
+  margin: 2em;
+  color: var(--medium-gray);
+  background: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(42, 38, 38);
+}
+
+.star_container img {
+  display: block;
+  margin: 1.5vh auto;
+}
+
+
+.text_container {
+  margin: 0 2em;
+}
+
+.text_container h1 {
+  color: var(--white);
+}
+
+.text_container p {
+  color: var(--light-gray);
+  line-height: 1.5;
+}
+
+
+.rating_container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0em 1em;
+}
+
+.rating_container div {
+  text-align: center;
+  padding: 10px 0;
+  color: var(--medium-gray);
+  background: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(42, 38, 38);
+  margin: auto;
+  cursor: pointer;
+}
+
+.rating_container div:hover {
+  background-color: var(--light-gray);
+  color: var(--white);
+}
+
+.rating_container .active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.submit_button_container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 2em;
+}
+
+.submit_button_container input[type="submit"] {
+  grid-area: 2;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.submit_button_container input[type="submit"]:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  cursor: pointer;
+}

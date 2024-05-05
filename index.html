@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Rating Comonent</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="grid_wrapper_center">
+      <div class="card">
+        <form class="grid_container_content" id="form" onsubmit="handleSubmit()" action="./thankyou.html">
+          <div class="star_container">
+            <img src="./images/icon-star.svg" alt="icon-star">
+          </div>
+          <div class="text_container">
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated
+              to help us improve our offering!</p>
+          </div>
+          <div class="rating_container" id="rating_star_container">
+            <div class="rating_stars" value="1">1</div>
+            <div class="rating_stars" value="2">2</div>
+            <div class="rating_stars" value="3">3</div>
+            <div class="rating_stars" value="4">4</div>
+            <div class="rating_stars" value="5">5</div>
+          </div>
+          <div class="submit_button_container">
+            <input type="submit" value="submit">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
