@@ -1,9 +1,10 @@
-const form = document.getElementById('grid_container_content')
-const ratingStars = [...document.getElementsByClassName('rating_stars')]
-const ratingMessageNumber = document.getElementById('rating_message_number')
-
+const form = document.getElementById('grid_container_content');
+const ratingStars = [...document.getElementsByClassName('rating_stars')];
+const ratingMessageNumber = document.getElementById('rating_message_number');
+const errorMsg = document.getElementById('message_for_user');
 const handleSubmit = (number) => {
   localStorage.setItem("rating", number)
+  console.log(localStorage.length);
 }
 
 //[filter the clicked value]
@@ -24,8 +25,9 @@ const getYourRatingStar = ratingStars.forEach((star) => {
   });
 });
 
-if (localStorage.getItem('rating') && ratingMessageNumber) {
-  ratingMessageNumber.innerText = localStorage.getItem('rating')
+if (localStorage.length < 1) {
+  errorMsg.innerHTML = 'please go back and rate'
 } else {
-  console.error('something went wrong')
+  ratingMessageNumber.innerText = localStorage.getItem('rating')
+  localStorage.removeItem("rating")
 }

@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: 
+- [Live Site URL](https://main--rating-stars-component.netlify.app/)
 
 ## My process
 
@@ -44,6 +44,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - vite bundler vanilla js
+- tested in Chrome Browser
 
 ### What I learned
 
